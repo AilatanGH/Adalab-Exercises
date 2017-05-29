@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Formulario</title>
+  <style media="screen">
+  body {
+    width: 50%;
+    box-sizing: border-box;
+    margin: 40px auto;
+    color: white;
+  }
+
+  .box-form {
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+    margin: 20px 40px;
+    background: linear-gradient(10deg, blue, white);
+    border-radius: 10px;
+  }
+
+  table {
+    width: 250px;
+  }
+
+  select {
+    height: 20px;
+    width: 100px;
+    padding-bottom: 20px;
+  }
+
+  .box-name {
+    width: 240px;
+    height: 20px;
+    padding-left: 20px;
+    border-radius: 4px;
+  }
+
+  .box-content {
+    width: 510px;
+    height: 20px;
+    padding-left: 20px;
+    border-radius: 4px;
+  }
+
+  .box-genero{
+    margin: 20px 0;
+  }
+
+  .btn {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: green;
+    border: 0px;
+    color: white;
+  }
+}
+
+</style>
+</head>
+<body onload="loadSelects();">
+
+  <div class="box-form">
+    <h1>Create an account</h1>
+    <h2>It's free and always will be.</h2>
+
+    <form action="index.html" method="post" onsubmit="return validateForm();">
+      <table>
+        <tr>
+          <td><input class="box-name" id="name" type="text" name="first name" value="" placeholder="First Name" required=""></td>
+          <td><input class="box-name" id="surname" type="text" name="first name" value="" placeholder="Surname"></td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td><input class="box-content" id="email" type="email" name="email" value="" placeholder="Email or mobile number" required=""></td>
+        </tr>
+        <tr>
+          <td><input class="box-content" id="reemail" type="email" name="email" value="" placeholder="Re-enter email or mobile number" required=""></td>
+        </tr>
+        <tr>
+          <td><input class="box-content" id="password" type="password" name="password" value="" placeholder="Password" required=""></td>
+        </tr>
+      </table>
+    </form>
+
+    <h3>Birthday</h3>
+    <select class="day" name="day">
+      <option value="">Day</option>
+
+    </select>
+    <select class="month" name="month">
+      <option value="">Month</option>
+
+    </select>
+    <select class="year" name="year" >
+      <option value="">Year</option>
+
+    </select>
+
+    <div class="box-genero">
+
+      <label for="paymentmethod1">Female</label>
+      <input id="paymentmethod1" type="radio" value="debitcard" name="paymentmethods"/>
+
+      <label for="paymentmethod1">Male</label>
+      <input id="paymentmethod1" type="radio" value="debitcard" name="paymentmethods"/>
+
+    </div>
+
+    <button id="button" class="btn" type="button" name="button"> Create an account</button>
+
+  </div>
+
+  <script type="text/javascript" src="main.js"></script>
+
+</script>
+</body>
+</html>
