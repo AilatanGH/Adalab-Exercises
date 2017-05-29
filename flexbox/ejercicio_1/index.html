@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio Flexbox</title>
+
+    <style media="screen">
+
+      /* GENERAL */
+
+      body {
+        margin:0;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      h1, h2 {
+        text-align: center;
+        margin:0;
+      }
+
+      /* CONTENIDO */
+
+      header {
+        width: 100%;
+        background-color: orange;
+      }
+
+      .flex {
+        flex-grow: 1;
+      }
+
+      .column {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .column1-4 {
+        width: 25%;
+        min-width: 240px;
+      }
+
+      .box_1 {
+        background-color: yellow;
+      }
+
+      .box_2 {
+        background-color: pink;
+      }
+
+      .box_3 {
+        background-color: blue;
+      }
+
+      .column2-4 {
+        width: 50%;
+        min-width: 280px;
+      }
+
+      .text p {
+        padding:20px;
+        margin: 0;
+      }
+
+      footer {
+        width: 100%;
+        background-color: green;
+      }
+
+      </style>
+    </head>
+    <body>
+
+      <div class="container">
+
+        <header>
+          <h1>HEADER</h1>
+        </header>
+
+        <main class="column">
+
+          <aside class=" column1-4 box_1 flex">
+            <h2>Aside 1</h2>
+          </aside>
+
+          <article class="column2-4 box_3 flex">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </article>
+
+          <aside class="column1-4 box_2 flex">
+            <h2>Aside 2</h2>
+          </aside>
+
+        </main>
+
+        <footer>
+          <h1>FOOTER</h1>
+        </footer>
+
+      </div>
+
+    </body>
+    </html>

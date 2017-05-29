@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 2</title>
+    <style media="screen">
+
+      body {
+        box-sizing: border-box;
+      }
+
+      * {
+        margin: 0;
+      }
+
+      .container {
+        max-width: 840px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+      }
+
+      .box {
+        width: 150px;
+        height: 100px;
+        padding: 20px;
+      }
+
+      .box img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      .text {
+        width: 45%;
+        height: 100px;
+        padding: 20px;
+      }
+
+      .title {
+        margin-bottom: 30px;
+      }
+      .text h1 {
+        font-size: 20px;
+      }
+
+      .text h2{
+        font-size: 16px;
+        color: grey;
+        font-weight: normal;
+      }
+
+      .button {
+        margin-top: 20px;
+      }
+
+      .button li{
+        margin-top: 20px;
+        display: inline;
+      }
+
+      .button a {
+        padding: 10px;
+        background-color: grey;
+        color: white;
+        border-radius: 5px;
+      }
+
+      .button:hover a {
+        background-color: black;
+        border-radius: 5px;
+      }
+
+      a {
+        text-decoration: none;
+        margin-right: 20px;
+      }
+
+      .valoracion {
+        width: 20%;
+        padding: 20px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+      }
+
+      .text_2 {
+        height: 50px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+      }
+
+      .text_2 h3 {
+        font-size: 14px;
+      }
+
+      .text_2 a {
+        color: grey;
+        font-size: 10px;
+      }
+
+      .valoracion img {
+        width: 50px;
+        height: 40px;
+      }
+
+      .box_2 {
+          padding: 10px;
+          height: 25px;
+          background-color: grey;
+          border-radius: 5px;
+          color: white;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="box">
+        <img src="https://cdn.pixabay.com/photo/2017/03/10/17/04/physiotherapy-2133286__340.jpg" alt="">
+      </div>
+
+      <div class="text">
+
+          <h1>Centro de fisiterapia Guzmán fernández</h1>
+          <h2>Fisioterapia General</h2>
+
+          <div class="button">
+
+            <ul>
+              <li><a href="">Reservar Cita</a></li>
+              <li><a href="">Pedir Presupuesto</a></li>
+            </ul>
+
+          </div>
+
+      </div>
+
+      <div class="valoracion">
+
+        <div class="text_2">
+          <h3>24 Valoraciones</h3>
+          <a class="link" href="#">Ver comentarios --></a>
+        </div>
+
+        <h2 class="box_2"> 8,9 </h2>
+
+        <img src="https://image.flaticon.com/icons/svg/149/149220.svg" alt="">
+        
+      </div>
+
+    </div>
+  </body>
+</html>

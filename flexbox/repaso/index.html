@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EJERCICIO REPASO FLEXBOX</title>
+
+    <style media="screen">
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+      }
+
+      header {
+        background-color: black;
+        color: white;
+      }
+
+      .modal-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+      }
+
+      .modal {
+        max-width: 600px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      button {
+        padding: 10px 35px;
+        font-size: 20px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+
+      .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      button:hover {
+        background-color: grey;
+        border: 1px solid grey;
+        color: white;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .space {
+        max-width: 600px;
+        width: 100%;
+      }
+
+      .nav-menu {
+        display: block;
+      }
+
+      .nav-menu ul {
+        margin: 25px auto;
+      }
+
+      .nav-menu ul li {
+        display: inline;
+        margin-left: 20px;
+      }
+
+      main {
+        margin: 0 auto;
+      }
+
+      .content {
+        flex-grow: 1;
+      }
+
+      .row {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-grow: row wrap;
+      }
+
+      .column{
+        display: flex;
+        flex-direction: column;
+      }
+
+      footer {
+        border-top: 2px solid black;
+      }
+
+      small {
+        margin-top: 25px;
+      }
+
+      </style>
+    </head>
+
+  <body class="column">
+
+    <header>
+      <div class="row space">
+          <h2>Mi blog</h2>
+        <div class="nav-menu">
+          <ul>
+            <li>Inicio</li>
+            <li>Archivo</li>
+            <li>Contacto</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="space content">
+      <div class="row">
+        <h3>Juan Gutierrez</h3>
+        <h4>Posted on March 21th, 2015</h4>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+    <!--  <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p> -->
+
+    </main>
+
+    <div class="modal-wrapper">
+      <div class="modal">
+
+        <h2>¡Hola!</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div class="button">
+          <button type="button" name="button">Rechazar</button>
+          <button type="button" name="button">Suscribirme</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="row space">
+
+        <small>copyright Juan Gutierrez</small>
+        <div class="nav-menu">
+          <ul>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Github</li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+  </body>
+</html>
